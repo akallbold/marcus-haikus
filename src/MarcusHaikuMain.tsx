@@ -41,11 +41,15 @@ const MarcusHaikuMain = () => {
         <p>
           {`Every word from Marcus Aurelius' first three books of Meditations was
         put through an algorithm to determine how many syllables the word
-        contained (turns out, this is quite difficult to do successfully). The lines were randomly created using the traditional haiku
+        contained. The lines were randomly created using the traditional haiku
         pattern of 5 syllables for the first line, 7 syllables for
-        the second line and 5 syllables for the third and final line. This is a great use case for Augmented
-        Intelligence, specifically using the computer to augment the creativity
-        of the human mind, as the human mind can more easily determine the number of syllables in a word, and the machine may be able to "randomly" generate combinations of words that would not immediately come to mind.`}
+        the second line and 5 syllables for the third and final line. `}
+        </p>
+        <h3>Some thoughts...</h3>
+        <p>
+          {`This is a great use case for Augmented
+        Intelligence, in other words, using the computer to augment the creativity
+        of the human mind. Specifically, the human mind can more easily determine the number of syllables in a word, and the machine may be able to "randomly" generate combinations of words that would not immediately come to the human mind.`}
         </p>
       </Grid>
     </Grid>

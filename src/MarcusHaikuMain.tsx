@@ -22,34 +22,33 @@ const MarcusHaikuMain = () => {
   };
 
   return (
-    <>
-      <Grid>
-        <div>
-          <h1 className="blockquote-h1">
-            Random Marcus Aurelius haiku generator
-          </h1>
-          <p className="mb-0">
-            {haiku.lineOne}
-            <br />
-            {haiku.lineTwo}
-            <br />
-            {haiku.lineThree}
-          </p>
-        </div>
-        <Button onClick={haikuGenerator}>Generate new haiku</Button>
-        <div style={{ height: "10vh" }} />
-        <h6>How are the haikus generated?</h6>
+    <Grid container m={3}>
+      <Grid flexDirection="column">
+        <h1>Random Marcus Aurelius haiku generator</h1>
         <p>
-          Every word from Marcus Aurelius' first three books of Meditations was
-          put through an algorithm to determine how many syllables the word
-          contained. The lines were randomly created using the traditional haiku
-          pattern of 5 syllables for the first and last line and 7 syllables for
-          the second line. This is a tangent on the idea of Augmented
-          Intelligence, specifically using the computer to augment the
-          creativity of the human mind.
+          {haiku.lineOne}
+          <br />
+          {haiku.lineTwo}
+          <br />
+          {haiku.lineThree}
+        </p>
+        <Button variant="outlined" onClick={haikuGenerator}>
+          Generate new haiku
+        </Button>
+      </Grid>
+      <Grid sx={{ marginTop: 4 }}>
+        <h3>How are the haikus generated?</h3>
+        <p>
+          {`Every word from Marcus Aurelius' first three books of Meditations was
+        put through an algorithm to determine how many syllables the word
+        contained (turns out, this is quite difficult to do successfully). The lines were randomly created using the traditional haiku
+        pattern of 5 syllables for the first line, 7 syllables for
+        the second line and 5 syllables for the third and final line. This is a great use case for Augmented
+        Intelligence, specifically using the computer to augment the creativity
+        of the human mind, as the human mind can more easily determine the number of syllables in a word, and the machine may be able to "randomly" generate combinations of words that would not immediately come to mind.`}
         </p>
       </Grid>
-    </>
+    </Grid>
   );
 };
 

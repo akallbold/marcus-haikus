@@ -43,7 +43,7 @@ const isMobile = useIsMobile();
             {haiku.lineThree}
           </p>
           <Grid sx={isMobile? { margin: 4 }:{ margin: 4 }}/>
-          <Button variant="outlined" onClick={haikuGenerator} sx={{textTransform:'none', fontFamily:'Gideon Roman serif'}}>
+          <Button variant="outlined" onClick={haikuGenerator} sx={{textTransform:'none'}}>
             Generate New Haiku
           </Button>
         </Grid>

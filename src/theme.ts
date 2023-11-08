@@ -87,7 +87,7 @@ export const theme = createTheme({
       textAlign:'left'
     },
     button: {
-        fontFamily:'Gideon Roman serif'
+        fontFamily:'"Gideon Roman Serif", serif',
     },
     caption: {
       fontSize: 12,
@@ -101,7 +101,6 @@ export const theme = createTheme({
       letterSpacing: "2px",
       textTransform:"uppercase"
     },  
-    fontFamily:'Gideon Roman serif'
-    
+    fontFamily: '"Gideon Roman Serif", serif',
   },
 });

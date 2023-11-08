@@ -19,7 +19,6 @@ export const lineGenerator = (startingSyllableCount:number) => {
     while (syllablesForNextLine > 5) {
       syllablesForNextLine = randomNumberGenerator(syllablesLeftInLine);
     }
-    console.log({line, syllablesForNextLine, syllablesLeftInLine})
     line += `${wordPicker(syllablesForNextLine)} `;
     syllablesLeftInLine -= syllablesForNextLine;
   }

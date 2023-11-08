@@ -49,7 +49,7 @@ const MarcusHaikuMain = () => {
         <p>
           {`This is a great use case for Augmented
         Intelligence, in other words, using the computer to augment the creativity
-        of the human mind. Specifically, the human mind can more easily determine the number of syllables in a word, and the machine may be able to "randomly" generate combinations of words that would not immediately come to the human mind.`}
+        of the human mind. Specifically, the human mind can more easily determine the number of syllables in a word, and the machine may be able to "randomly" generate combinations of words that would not immediately come to the human mind. Sometimes the computer gets the number of variables wrong, or the sentence doesn't quite make sense, but that's where you come in!`}
         </p>
       </Grid>
     </Grid>

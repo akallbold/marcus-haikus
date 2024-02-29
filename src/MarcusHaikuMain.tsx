@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { lineGenerator } from "./data/utils";
-import useIsMobile from "./hooks/useMobile";
 import './App.css'; 
 
 const emptyHaiku = {
@@ -12,7 +11,6 @@ const emptyHaiku = {
 const MarcusHaikuMain = () => {
   const [haiku, setHaiku] = useState(emptyHaiku);
   useEffect(() => haikuGenerator(), []);
-  const isMobile = useIsMobile();
 
   const haikuGenerator = () => {
     let currentHaiku = emptyHaiku;
